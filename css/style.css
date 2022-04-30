@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: eurofurence;
-  src: url("../fonts/eurofurence/eurof35.ttf") format("truetype");
+  src: url(/font/eurofurence/eurof35.ttf);
 }
 
 /* BASIC */
@@ -88,8 +88,9 @@ img {
   border-bottom: 6px solid #58c93a;
   background-color: #292929;
 }
-/* .main-nav > *:not(:last-child) {
-} */
+.main-header .main-nav a:last-child {
+  border-right: 1px solid black;
+}
 
 /* MAIN CONTENT */
 .main-content {
@@ -105,16 +106,12 @@ img {
 
 .card-tag .card-title {
   font-size: 1.75rem;
-  font-style: lato-bold;
+  font-family: lato-bold, sans-serif;
   text-transform: uppercase;
 }
-.card-tag .card-title {
-  font-size: 1.75rem;
-  font-style: lato-bold;
-}
+
 .card-tag .card-para {
   font-size: 1rem;
-  font-style: lato-regular;
 }
 .img-container {
   width: 100%;
@@ -137,6 +134,12 @@ img {
   color: #58c93a;
   border: 2px solid #58c93a;
   cursor: pointer;
+}
+.card-btn span {
+  display: none;
+}
+.card-btn:hover > span {
+  display: inline;
 }
 
 /* PAGES */
@@ -166,7 +169,7 @@ img {
 .main-footer .logo {
   padding-top: 75px;
   font-size: 2.5rem;
-  font-family: eurofurence;
+  font-family: eurofurence, monospace;
   text-transform: capitalize;
 }
 
@@ -180,7 +183,7 @@ img {
 }
 .right-reserevd span {
   color: #939292;
-  font-family: lato-bold;
+  font-family: lato-bold, sans-serif;
 }
 .social-nav {
   padding-top: 30px;
