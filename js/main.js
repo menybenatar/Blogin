@@ -12,3 +12,6 @@
 //   var spanNum = ev.target.dataset.span;
 //   document.querySelector(`.btn${spanNum} span`).innerText = "";
 // }
+function toggleMenu() {
+  document.body.classList.toggle("menu-open");
+}

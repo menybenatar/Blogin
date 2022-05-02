@@ -9,11 +9,23 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
+    <div class="main-screen" onclick="mainScreenToggle()"></div>
     <div class="main-header">
       <div class="main-header main-layout flex align-center space-between">
         <div class="logo">blogin<span>.</span></div>
+        <button class="btn-menu" onclick="toggleMenu()">☰</button>
+
         <ul class="main-nav clean-list flex">
-          <li><a href="#">journal</a></li>
+          <button class="btn-close-menu" onclick="toggleMenu()">X</button>
+          <li class="journal">
+            <a href="#">journal</a>
+            <ul class="drop-down clean-list flex column">
+              <li>October 2021</li>
+              <li>January 2022</li>
+              <li>April 2022</li>
+              <li>July 2022</li>
+            </ul>
+          </li>
           <li><a href="#">about</a></li>
           <li><a href="#">work</a></li>
           <li><a href="#">contact</a></li>
